@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: rgb(78, 76, 76);
+  list-style: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Center navigation items */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px; /* Fixed typo from 15x to 15px */
+  display: block;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black; /* Ensure text color changes on hover */
+}
+
+h3 {
+  color: #fff;
+}
+
+/* Dark mode variables */
+:root {
+  --primary-color: #d1d1d1;
+  --secondary-color: #212121;
+  --lightmode-color: #000106;
+  --text-color: #000; /* Default text color for light mode */
+}
+
+/* Dark theme */
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: white;
+  --lightmode-color: #000106;
+  --text-color: #fff; /* Text color for dark mode */
+}
+
+body {
+  background: var(--primary-color);
+  margin: 0;
+  color: var(--text-color); /* Apply text color */
+}
+
+p {
+  color: var(--text-color); /* Apply text color */
+}
+
+.wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 48px;
+  color: var(--text-color); /* Apply text color */
+  margin-bottom: 25px;
+}
+
+.wrapper .our_team {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+.member_img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Responsive design example */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically on small screens */
+  }
+
+  .member_img img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically on small screens */
+  }
+
+  .member_img img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px;
+  }
+}
+
+/* DAGDAG PARA SA LINK */
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav li a {
+  color: blue;
+}
